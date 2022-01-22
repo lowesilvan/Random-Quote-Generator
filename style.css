@@ -1,0 +1,30 @@
+#body {
+    background: url("https://wallpaperaccess.com/full/4683862.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#quote-box {
+    border-radius: 3px;
+    width: 480px;
+    height: auto;
+    display: table;
+    background-color: #fff;
+    margin-top: 9%;
+    padding: 0px 40px;
+}
+
+ #author {
+    width: 480px;
+    height: auto;
+    clear: both;
+    padding-top: 15px;
+    font-size: 1em;
+    text-align: right;
+  }
+
+
+  @media all and (max-width:480px) {
+   .custom-class { width: 100%; display:block; margin-top: 1rem;}
+   #header {font-size: 20px;}
+}  
