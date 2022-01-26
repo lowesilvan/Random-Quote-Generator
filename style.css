@@ -1,30 +1,98 @@
-#body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background: url("https://wallpaperaccess.com/full/4683862.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
+
 
 #quote-box {
-    border-radius: 3px;
-    width: 480px;
-    height: auto;
-    display: table;
+    border-radius: 8px;
     background-color: #fff;
-    margin-top: 9%;
-    padding: 0px 40px;
 }
 
- #author {
-    width: 480px;
+#author {
+    width: auto;
     height: auto;
     clear: both;
     padding-top: 15px;
     font-size: 1em;
     text-align: right;
-  }
+}
+
+a,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+button {
+      margin-left: 3rem;
+}
+
+.place {
+    text-align: center;
+}
 
 
-  @media all and (max-width:480px) {
-   .custom-class { width: 100%; display:block; margin-top: 1rem;}
-   #header {font-size: 20px;}
+@media screen and (max-width: 587px) {
+.place {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+a,button {
+    display:block;
+    padding:1rem 2rem;
+    text-align:center;
+    margin: 0.67rem;
+}
+
+}
+
+@media screen and (max-width: 720px) {
+.place {
+    position:relative;
+    text-align: center;
+}
+
+a,button {
+    padding:1rem 2rem;
+    text-align:center;
+    margin: 0.67rem;
+}
+
+}  
+
+@media screen and (max-width: 1270px) {
+    .custom-class {
+   }
+}  
+@media screen and (min-width: 1300px) {
 }  
